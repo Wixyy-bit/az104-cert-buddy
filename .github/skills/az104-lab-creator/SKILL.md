@@ -11,7 +11,7 @@ description: Create short AZ-104 practice labs (10-20 minutes) that are executab
 
 **Required sources:**
 
-- Microsoft Learn (architecture + what is correct)
+- Microsoft Learn (architecture + what is correct; access via Context7 and Copilot web search)
 - Azure MCP (validate that steps actually work as written)
 - Context7 MCP (if lab uses CLI/PowerShell modules or SDK snippets)
 
@@ -79,6 +79,10 @@ lab:
     - "<Microsoft Learn URL(s)>"
 ```
 
+### Delivery rules
+
+Labs are delivered in full (all sections in a single message). Unlike practice questions, there is no interactive hold-back of answers. If multiple labs are requested, deliver each lab sequentially in the same message.
+
 ### Quality checklist
 
 - "Single objective, single outcome."
@@ -86,6 +90,8 @@ lab:
 - "Azure MCP confirms feasibility and correctness."
 - "Cleanup is complete and safe."
 - "Instructions use Microsoft formatting rules for UI labels and commands."
+- "All Azure product names use current terminology (no retired names)."
+- "No contractions in any lab text."
 
 ---
 

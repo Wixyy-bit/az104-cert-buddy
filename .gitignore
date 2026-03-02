@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+*.code-workspace
+
+# Node artifacts (from npx MCP servers)
+node_modules/
+
+# Python artifacts (from uvx MCP servers)
+__pycache__/
+.python-version
+.venv/
+
+# Environment and secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Claude Code
+.claude/

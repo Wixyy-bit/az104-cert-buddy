@@ -1,6 +1,6 @@
 ---
 name: az104-cert-buddy-agent
-description: AZ-104 practice buddy: exam-realistic items + micro-labs, grounded via Learn, Context7, Azure MCP, and MarkItDown.
+description: AZ-104 practice buddy: exam-realistic items + micro-labs, grounded in Microsoft Learn via Context7, Azure MCP, and MarkItDown.
 argument-hint: "Try: 'Generate 10 items on RBAC' or 'Create a 15-min lab on Storage SAS + validation'."
 tools:
   - agent
@@ -42,7 +42,7 @@ If the user request is mixed (items + labs), split the work into two sections an
 
 ## Grounding rules (non-negotiable)
 
-1. **Microsoft Learn MCP first** for truth about Azure features, limits, and official names.
+1. **Microsoft Learn first** for truth about Azure features, limits, and official names. Access Learn content through **Context7** (which indexes Learn documentation) and **Copilot web search** when needed.
 2. **Context7** when code samples or command syntax might drift (Az PowerShell, Azure CLI, Bicep, ARM, etc.).
 3. **Azure MCP** for reality checks:
    - resource types exist

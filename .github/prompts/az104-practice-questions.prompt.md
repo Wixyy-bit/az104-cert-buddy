@@ -4,9 +4,9 @@ description: "Generate one exam-realistic AZ-104 practice question grounded in M
 argument-hint: "skillArea='Manage identities and governance' objective='RBAC role assignments' bloom='Apply' difficulty='medium' itemType='multiple-choice'"
 agent: az104-cert-buddy-agent
 tools:
-  - learn/*
-  - context7/*
-  - Azure MCP Server/*
+  - az104buddy-azure/*
+  - az104buddy-context7/*
+  - az104buddy-markitdown/*
 ---
 
 Generate **ONE** original, exam-realistic **AZ-104** practice question.
@@ -25,9 +25,9 @@ You must follow the workspace skill **az104-item-creator** for item structure, g
 
 ## Grounding and validation rules
 
-1. Ground the correct behavior in **Microsoft Learn** using the **learn** MCP tools.
+1. Ground the correct behavior in **Microsoft Learn** using **Context7** tools (which index Learn documentation) and Copilot web search.
 2. If the item includes CLI/PowerShell syntax, confirm with **Context7** tools.
-3. If you claim a command/property exists or works in a particular way, sanity-check with **Azure MCP Server** tools.
+3. If you claim a command/property exists or works in a particular way, sanity-check with **Azure MCP** tools.
 4. Provide **Microsoft Learn URLs** in the Phase 2 References section.
 
 ## Terminology

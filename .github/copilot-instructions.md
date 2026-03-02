@@ -15,13 +15,14 @@
 - Each skill file is a single YAML frontmatter block followed by Markdown.
 - The skill name used by agents must match the YAML frontmatter name in the skill file, not the folder name.
 - Agent files use YAML frontmatter with tools and skills lists. Keep tool IDs scoped to MCP servers defined in .vscode/mcp.json.
+- Prompt files (in .github/prompts/) reference agents by the `name` field in the agent's YAML frontmatter via the `agent:` key. The current value is `az104-cert-buddy-agent`. If the agent is renamed, update all prompt files that reference it.
 - Current skills:
   - az104-item-creator (exam item generation)
   - az104-lab-creator (lab generation)
 
 ## Grounding and validation rules
 
-- Questions must be grounded in Microsoft Learn first; use Context7 only when CLI or PowerShell syntax accuracy matters.
+- Questions must be grounded in Microsoft Learn content first. Use Context7 to retrieve current Learn documentation; also use Context7 when CLI or PowerShell syntax accuracy matters.
 - Labs must be validated with Azure MCP for resource existence, flags, and success checks.
 - If a request mixes questions and labs, split the output and apply the correct skill to each section.
 

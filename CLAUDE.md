@@ -18,6 +18,8 @@ This is a **content-only repository** for an AZ-104 certification study buddy po
     az104-practice-questions.prompt.md     # Reusable prompt template
   copilot-instructions.md                  # Copilot workspace instructions
 .vscode/mcp.json                           # MCP server definitions (workspace-scoped)
+references/
+  az104-objectives.md                      # AZ-104 skills-measured reference (April 2025)
 ```
 
 ### How It Works
@@ -26,7 +28,7 @@ The **az104-cert-buddy-agent** orchestrates two skills:
 - **az104-item-creator**: Generates exam-realistic AZ-104 practice questions (multiple-choice, scenario-first stems, 4 options, rationale for each).
 - **az104-lab-creator**: Generates 10-20 minute self-validating practice labs with prerequisites, tasks, validation gates, troubleshooting, and cleanup.
 
-Both skills enforce a strict grounding chain: **Microsoft Learn first** -> **Context7 for CLI/PowerShell syntax** -> **Azure MCP for reality checks**.
+Both skills enforce a strict grounding chain: **Microsoft Learn first** (accessed via Context7 and Copilot web search) -> **Context7 for CLI/PowerShell syntax** -> **Azure MCP for reality checks**.
 
 Questions use a **two-phase interactive delivery**: Phase 1 presents only the stem and choices (no answer), then the agent waits for the user to reply. Phase 2 reveals the correct answer, 2-sentence-per-choice rationale, and references.
 

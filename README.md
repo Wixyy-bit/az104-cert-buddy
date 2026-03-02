@@ -23,7 +23,7 @@ You will need the following before getting started:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/<your-org>/az104-cert-buddy.git
+   git clone https://github.com/timothywarner-org/az104-cert-buddy.git
    ```
 
 2. Open the folder in VS Code:
@@ -132,7 +132,7 @@ Three Model Context Protocol servers are configured in `.vscode/mcp.json`. They 
 The agent enforces several non-negotiable rules across all generated content:
 
 - **Current terminology only.** Retired Azure product names are never used. For example, "Azure AD" is always replaced with "Microsoft Entra ID." A full rename table is maintained in `.github/copilot-instructions.md`.
-- **Grounded in Microsoft Learn.** Every question and lab is grounded in official Microsoft Learn documentation before any other source is consulted. Microsoft Learn URLs are included as references.
+- **Grounded in Microsoft Learn.** Every question and lab is grounded in official Microsoft Learn documentation (accessed via Context7 and Copilot web search) before any other source is consulted. Microsoft Learn URLs are included as references.
 - **Original content only.** The agent does not recreate, paraphrase, or reference real exam questions, braindumps, or leaked content. Every scenario and stem is written from scratch.
 - **No contractions.** All generated text avoids contractions.
 - **No trick wording.** Negative words are avoided; when necessary, they are bolded and capitalized.
@@ -154,4 +154,6 @@ The agent enforces several non-negotiable rules across all generated content:
 .vscode/
   mcp.json                             MCP server definitions (workspace-scoped)
 CLAUDE.md                              Guidance for Claude Code when editing this repo
+references/
+  az104-objectives.md                  AZ-104 skills-measured reference (April 2025)
 ```

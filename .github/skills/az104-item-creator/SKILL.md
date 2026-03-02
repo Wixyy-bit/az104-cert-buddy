@@ -11,7 +11,7 @@ description: Generate AZ-104 practice questions that feel like the real exam wit
 
 **Required sources:**
 
-- Microsoft Learn (primary truth source for objectives + features)
+- Microsoft Learn (primary truth source for objectives + features; access via Context7 and Copilot web search)
 - Context7 MCP (version-specific docs/snippets for CLI/PowerShell/SDK accuracy)
 - Azure MCP (reality-check commands, feature existence, portal/CLI names when needed)
 
@@ -85,6 +85,7 @@ If multiple questions were requested, repeat this Phase 1 / Phase 2 cycle for ea
   - skill_area: "<one of the AZ-104 skill areas>"
   - objective: "<specific objective line>"
   - bloom: "<Remember|Understand|Apply|Analyze>"
+  - difficulty: "<easy|medium|hard>"
 - **question**
   - stem:
     - <Scenario + question. Keep it tight. One problem. One decision.>
