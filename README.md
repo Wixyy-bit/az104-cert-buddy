@@ -83,7 +83,7 @@ Ask the agent for a hands-on lab. Labs are scoped to 10-20 minutes and include:
 
 - A single AZ-104 objective
 - Prerequisites and starting state
-- Numbered task steps (Azure portal by default, or CLI/PowerShell if you specify)
+- Numbered task steps (Azure CLI by default, or Portal/PowerShell if you specify)
 - Validation gates after each major step so you can confirm success
 - Troubleshooting tips for common failures
 - Cleanup steps that remove all created resources
@@ -171,11 +171,16 @@ The agent enforces several non-negotiable rules across all generated content:
     az104-lab-creator/SKILL.md         Practice lab generation skill
   prompts/
     az104-practice-questions.prompt.md  Prompt template for single practice questions
-    az104-practice-lab.prompt.md         Prompt template for portal practice labs
+    az104-practice-lab.prompt.md        Prompt template for portal practice labs
   copilot-instructions.md              Workspace-level Copilot instructions and rename table
 .vscode/
   mcp.json                             MCP server definitions (workspace-scoped)
+.gitignore                             Git ignore rules
 CLAUDE.md                              Guidance for Claude Code when editing this repo
+LICENSE                                Repository license
 references/
   az104-objectives.md                  AZ-104 skills-measured reference (April 2025)
+  fictional-companies.md               Microsoft fictional company names for scenarios
+  style-guide.md                       Microsoft Writing Style Guide key principles
+  style-guide.pdf                      Microsoft Writing Style Guide (full source PDF)
 ```
