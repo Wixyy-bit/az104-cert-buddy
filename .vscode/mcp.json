@@ -1,0 +1,36 @@
+{
+  "servers": {
+    "az104buddy-context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@upstash/context7-mcp@1.0.31"],
+      "env": {
+        "CONTEXT7_API_KEY": "${input:CONTEXT7_API_KEY}"
+      },
+      "gallery": "https://api.mcp.github.com",
+      "version": "1.0.31"
+    },
+    "az104buddy-markitdown": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["markitdown-mcp@0.0.1a4"],
+      "gallery": "https://api.mcp.github.com",
+      "version": "0.0.1a4"
+    },
+    "az104buddy-azure": {
+      "type": "stdio",
+      "command": "dnx",
+      "args": ["Azure.Mcp@2.0.0-beta.23", "--yes", "--", "server", "start"],
+      "gallery": "https://api.mcp.github.com",
+      "version": "2.0.0-beta.23"
+    }
+  },
+  "inputs": [
+    {
+      "id": "CONTEXT7_API_KEY",
+      "type": "promptString",
+      "description": "API key for authentication",
+      "password": true
+    }
+  ]
+}

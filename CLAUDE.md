@@ -15,7 +15,8 @@ This is a **content-only repository** for an AZ-104 certification study buddy po
     az104-item-creator/SKILL.md            # Exam question generation skill
     az104-lab-creator/SKILL.md             # Practice lab generation skill
   prompts/
-    az104-practice-questions.prompt.md     # Reusable prompt template
+    az104-practice-questions.prompt.md     # Prompt template for practice questions
+    az104-practice-lab.prompt.md           # Prompt template for portal labs
   copilot-instructions.md                  # Copilot workspace instructions
 .vscode/mcp.json                           # MCP server definitions (workspace-scoped)
 references/

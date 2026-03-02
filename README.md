@@ -149,7 +149,8 @@ The agent enforces several non-negotiable rules across all generated content:
     az104-item-creator/SKILL.md        Exam question generation skill
     az104-lab-creator/SKILL.md         Practice lab generation skill
   prompts/
-    az104-practice-questions.prompt.md  Reusable prompt template for single questions
+    az104-practice-questions.prompt.md  Prompt template for single practice questions
+    az104-practice-lab.prompt.md         Prompt template for portal practice labs
   copilot-instructions.md              Workspace-level Copilot instructions and rename table
 .vscode/
   mcp.json                             MCP server definitions (workspace-scoped)
