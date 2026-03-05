@@ -55,7 +55,7 @@ Microsoft voice is built on three principles:
 
 2. **Write like you speak.** Read your text aloud. Avoid jargon and overly complex language.
    - Replace: "Invalid ID"
-   - With: "You need an ID that looks like this: someone@example.com"
+   - With: "You need an ID that looks like this: someone\@example.com"
 
 3. **Project friendliness.** Use contractions: it's, you'll, you're, we're, let's.
    - **Note for this project:** Exam questions and lab instructions do NOT use contractions per our guardrails. This tip applies to general Microsoft content only.
@@ -91,6 +91,7 @@ Capitalize only the first word and any proper nouns. Use for:
 - Phrases and subheadings
 
 Examples:
+
 - "Find a Microsoft partner" (not "Find a Microsoft Partner")
 - "Limited-time offer" (not "Limited-Time Offer")
 
@@ -115,6 +116,7 @@ Use only for product/service names, book/song titles, article titles in citation
 ### Hyphenated compound words in titles
 
 Capitalize the word after a hyphen if it would be capitalized without the hyphen or it is the last word.
+
 - "Self-Paced Training for Microsoft Visual Studio"
 - "Copy-and-Paste Support in Windows Apps"
 
@@ -133,6 +135,7 @@ Use consistent formatting to help readers locate and interpret information. In d
 - Do not include the element type (button, checkbox) unless it adds needed clarity.
 
 Examples:
+
 - "Select **Save as**" (not "Select the **Save as** button" or "Select **Save as...**")
 - "Clear the **Match case** checkbox."
 - "Select **Allow row to break across pages**."
@@ -144,18 +147,21 @@ Examples:
 - Do not include "command" or "menu" unless it adds clarity.
 
 Examples:
+
 - "Go to **Tools**, and select **Change language**."
 - "On the **Design** menu, select **Colors**."
 
 ### Tabs, blades, panes, palettes, dialogs, toggles
 
 All follow the same pattern:
+
 - Avoid talking about the element. Focus on what the customer does.
 - When you must name the element, use **bold**.
 - Use sentence-style capitalization unless matching the UI.
 - Do not include the element type word unless it adds clarity.
 
 Examples:
+
 - "On the **Design** tab, select **Header row**."
 - "In **Web app**, provide a name for your site."
 - "Go to **Audit logs** to view events."
@@ -168,6 +174,7 @@ Examples:
 - No space around the plus sign (+) in shortcuts.
 
 Examples:
+
 - **Shift**, **F7**
 - **Ctrl+Alt+Del**
 - "To open the Preview tab, select **Alt+3**."
@@ -180,7 +187,7 @@ Examples:
 ### Other elements
 
 | Element | Convention | Example |
-|---------|-----------|---------|
+| ------- | --------- | ------- |
 | Database names | **Bold** (code style if in code syntax) | **WingtipToys** database |
 | Device/port names | All uppercase | USB, LPT1 |
 | Error messages | Sentence-style capitalization. Enclose in quotation marks when referencing in text. | If you see the error message, "Check scanner status and try again," ... |
@@ -190,7 +197,7 @@ Examples:
 | New terms | Italicize the first mention if defining immediately in text. | Microsoft Exchange consists of both *server* and *client* components. |
 | Placeholders | *Italic* for UI text. Angle brackets for code: `<version>`. | Enter *password*. `/v:<version>` |
 | Products/services/trademarks | Usually title-style capitalization. | Microsoft Word, Surface Pro |
-| URLs | All lowercase. | www.microsoft.com |
+| URLs | All lowercase. | `www.microsoft.com` |
 | User input | Usually lowercase unless case sensitive. **Bold** or *italic* depending on element. | Enter **hello world** |
 | Strings | Sentence-style capitalization. Enclose in quotation marks or use code style for code strings. | Select "Now is the time." |
 | Windows | Regular text (no bold). Sentence-style capitalization unless matching UI. Do not use "window" for dialogs, blades, or similar elements. | Switch to the source document. |
@@ -251,7 +258,7 @@ Abbreviate simple sequential menu interactions with right angle brackets. Includ
 Use input-neutral verbs that work with any input method (touch, mouse, keyboard, voice).
 
 | Verb | Use for | Example |
-|------|---------|---------|
+| ---- | ------- | ------- |
 | **Open** | Apps, programs, blades, File Explorer, files, folders, shortcut menus | Open **Photos**. |
 | **Close** | Apps, blades, dialogs, files, folders, notifications, tabs | Close **Excel**. |
 | **Leave** | Websites and webpages | Select **Submit** to complete the survey and leave this page. |
@@ -290,7 +297,7 @@ Use input-neutral verbs that work with any input method (touch, mouse, keyboard,
 ### Key word preferences
 
 | Instead of | Use |
-|-----------|-----|
+| --------- | --- |
 | carry out | run (for commands, macros, programs) |
 | reboot | restart |
 | quit | close (apps), sign out (sessions), end (connections) |
@@ -436,7 +443,7 @@ Use input-neutral verbs that work with any input method (touch, mouse, keyboard,
 Key terms for Azure-related content:
 
 | Term | Usage |
-|------|-------|
+| ---- | ----- |
 | cloud, the cloud | Do not capitalize unless part of "the Microsoft Cloud" or a product name. Use mostly as an adjective. Prefer "cloud computing" or "cloud services" over "the cloud." |
 | cloud computing | Two words, lowercase. Use instead of "the cloud" when referring generally to delivery of computing services over the internet. |
 | cloud platform | Use only for technical audiences (e.g., Azure content). |

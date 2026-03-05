@@ -15,7 +15,7 @@ private keys, and other sensitive material from version control.
 
 If you discover a security issue in this repository, please report it by email:
 
-- **To:** tim@techtrainertim.com
+- **To:** <tim@techtrainertim.com>
 - **Subject line:** Security: az104-cert-buddy
 - **Include:** A clear description of the issue, the affected file(s), and steps
   to reproduce the problem if applicable.
@@ -57,5 +57,5 @@ within 48 hours, you may send a follow-up email to the same address.
 ## Maintainer
 
 - **Name:** Tim Warner
-- **Email:** tim@techtrainertim.com
+- **Email:** <tim@techtrainertim.com>
 - **Website:** TechTrainerTim.com

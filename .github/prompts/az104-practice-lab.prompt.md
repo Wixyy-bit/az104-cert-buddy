@@ -1,13 +1,15 @@
 ---
 name: az104-practice-lab
-description: "Generate one short AZ-104 practice lab validated with Azure MCP, defaulting to Azure portal steps."
-argument-hint: "skillArea='Implement and manage storage' objective='Configure Azure Blob Storage' toolPreference='Portal' timebox='15'"
+description: "Generate one short AZ-104 practice lab validated with Azure MCP, defaulting to Azure CLI steps."
+argument-hint: "skillArea='Implement and manage storage' objective='Configure Azure Blob Storage' toolPreference='Azure CLI' timebox='15'"
 agent: az104-cert-buddy-agent
 tools:
   - az104buddy-azure/*
   - az104buddy-context7/*
   - az104buddy-markitdown/*
 ---
+
+# AZ-104 Practice Lab
 
 Generate **ONE** short, self-validating **AZ-104** practice lab.
 
@@ -17,9 +19,9 @@ You must follow the workspace skill **az104-lab-creator** for lab structure, gua
 
 ## Inputs (from chat)
 
-- Skill area: ${input:skillArea:Pick an AZ-104 skill area (or leave blank to choose)}
+- Skill area: ${input:skillArea:Pick an AZ-104 skill area (or leave blank and the agent picks one)}
 - Objective: ${input:objective:Specific objective to practice (optional)}
-- Tool preference: ${input:toolPreference:Portal | Azure CLI | PowerShell (default Portal)}
+- Tool preference: ${input:toolPreference:Portal | Azure CLI | PowerShell (default Azure CLI)}
 - Timebox: ${input:timebox:Duration in minutes (default 15)}
 
 ## Grounding and validation rules
@@ -35,7 +37,7 @@ Always use current Microsoft product names. Never use retired names (for example
 
 ## Tool preference default
 
-This prompt is designed for **Azure portal** practice labs. If the user does not specify a tool preference, default to **Portal** as the primary instruction path. When Portal is the path, steps must reference exact portal blade names, menu items, and button labels as they appear in the Azure portal UI.
+This prompt is designed for **Azure CLI** practice labs. If the user does not specify a tool preference, default to **Azure CLI** as the primary instruction path. When Azure CLI is the path, steps must use exact `az` commands with correct flags and parameters.
 
 ## Output format
 

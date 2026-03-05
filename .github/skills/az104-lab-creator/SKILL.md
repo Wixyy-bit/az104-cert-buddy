@@ -3,11 +3,11 @@ name: az104-lab-creator
 description: Create short AZ-104 practice labs (10-20 minutes) that are executable and self-validating. Every lab includes prerequisites, exact tasks, validation steps, expected outputs, and cleanup. Use Azure MCP to validate feasibility (commands, resource types, properties, and outcomes).
 ---
 
-## Skill: az104.practice_labs.micro.validated
+# Skill: az104.practice_labs.micro.validated
 
 **Description:** Create short AZ-104 practice labs (10-20 minutes) that are executable and self-validating. Every lab includes prerequisites, exact tasks, validation steps, expected outputs, and cleanup. Use Azure MCP to validate feasibility (commands, resource types, properties, and outcomes).
 
-### Grounding
+## Grounding
 
 **Required sources:**
 
@@ -15,14 +15,14 @@ description: Create short AZ-104 practice labs (10-20 minutes) that are executab
 - Azure MCP (validate that steps actually work as written)
 - Context7 MCP (if lab uses CLI/PowerShell modules or SDK snippets)
 
-### Style
+## Style
 
 **Microsoft style:**
 
 - Use Microsoft instruction formatting conventions for UI labels, commands, and dialog names.
 - See references/style-guide.md for detailed Microsoft writing style rules.
 
-### Guardrails
+## Guardrails
 
 - Keep the lab within AZ-104 scope (admin tasks, not deep dev).
 - Prefer lowest-cost resources; include a cost warning if not.
@@ -32,7 +32,15 @@ description: Create short AZ-104 practice labs (10-20 minutes) that are executab
 - Always use current Microsoft product names. Never use retired names such as "Azure AD" (use "Microsoft Entra ID"), "Azure AD Connect" (use "Microsoft Entra Connect"), and so on. See the full rename table in `.github/copilot-instructions.md`. If a lab touches identity or governance, double-check every product name against current terminology.
 - Use fictional company names from references/fictional-companies.md for any scenario context in lab titles or descriptions.
 
-### Workflow
+## Timebox guidance
+
+A lab should contain no more than 12 steps total across all tasks. If the lab requires more than 12 steps, it likely exceeds the 20-minute timebox. In that case, split the content into two separate labs, each focused on a narrower objective.
+
+## Cost warning placement
+
+If the lab uses resources that incur charges beyond the free tier, the cost warning must appear immediately after the **prerequisites** section and before **starting_state**. This ensures users see the warning before they begin creating resources.
+
+## Workflow
 
 1. Choose a single AZ-104 objective and state it at the top.
 2. Ground the intended configuration in Microsoft Learn (what correct means).
@@ -45,7 +53,7 @@ description: Create short AZ-104 practice labs (10-20 minutes) that are executab
 5. Add verification gates after each major step (fast checks).
 6. Add cleanup that exactly reverses the work.
 
-### Output format
+## Output format
 
 ```yaml
 lab:
@@ -81,11 +89,11 @@ lab:
     - "<Microsoft Learn URL(s)>"
 ```
 
-### Delivery rules
+## Delivery rules
 
 Labs are delivered in full (all sections in a single message). Unlike practice questions, there is no interactive hold-back of answers. If multiple labs are requested, deliver each lab sequentially in the same message.
 
-### Quality checklist
+## Quality checklist
 
 - "Single objective, single outcome."
 - "Every task has an explicit validation gate."

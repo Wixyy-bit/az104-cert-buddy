@@ -3,11 +3,11 @@ name: az104-item-creator
 description: Generate AZ-104 practice questions that feel like the real exam without copying it. Every item is grounded in current Microsoft Learn content, uses modern Azure terminology, and follows Microsoft-style exam item rules (scenario-first, plausible distractors, no trick wording).
 ---
 
-## Skill: az104.practice_questions.exam_realistic
+# Skill: az104.practice_questions.exam_realistic
 
 **Description:** Generate AZ-104 practice questions that feel like the real exam without copying it. Every item is grounded in current Microsoft Learn content, uses modern Azure terminology, and follows Microsoft-style exam item rules (scenario-first, plausible distractors, no trick wording).
 
-### Grounding
+## Grounding
 
 **Required sources:**
 
@@ -19,14 +19,14 @@ description: Generate AZ-104 practice questions that feel like the real exam wit
 
 - Study guide for Exam AZ-104: Microsoft Azure Administrator (skills outline + objective mapping) [Microsoft Learn]
 
-### Style
+## Style
 
 **Microsoft style:**
 
 - Follow Microsoft sentence-style capitalization and UI-label rules.
 - See references/style-guide.md for detailed Microsoft writing style rules.
 
-### Guardrails
+## Guardrails
 
 **Exam integrity:**
 
@@ -47,7 +47,7 @@ description: Generate AZ-104 practice questions that feel like the real exam wit
 - No “all of the above”, “none of the above”, or subset answers (no overlap between choices).
 - Distractors must be plausible and real (no fake services, fake flags, fake features).
 
-### Workflow
+## Workflow
 
 1. Pull current AZ-104 skill areas and choose a target objective to measure.
 2. Ground the intended correct behavior in Microsoft Learn.
@@ -59,16 +59,57 @@ description: Generate AZ-104 practice questions that feel like the real exam wit
 8. Run a candidate clarity check: single skill measured, no trivia, no hidden requirements.
 9. Prepare rationale internally but **do not deliver it yet** (see delivery rules below).
 
-### Delivery rules (non-negotiable)
+## Invalid answer handling
+
+When presenting questions interactively:
+
+- **"hint"**: Provide a clue that eliminates one distractor. Re-present the question with all four choices still visible but the eliminated option noted.
+- **"skip"** or **"I do not know"**: Immediately reveal the correct answer and full rationale (Phase 2), then move to the next question.
+- **Unrecognized input**: Prompt the user: "Please reply with **A**, **B**, **C**, or **D**. You can also type **hint** for a clue or **skip** to see the answer."
+
+## Progress tracking
+
+When multiple questions are requested:
+
+- Prefix each question with **"Question N of M"** (for example, "Question 3 of 10").
+- After the final question, present a summary: total correct, total incorrect, total skipped, and any weak skill areas identified.
+
+## Scenario-first stem guidance
+
+The stem must open with a workplace scenario before asking the question. The scenario establishes context that makes the question feel like a real admin decision.
+
+**Good example:**
+> Contoso Ltd. has a storage account in the East US region. The security team requires that all data at rest use customer-managed keys stored in Azure Key Vault. You need to configure encryption for the storage account. What should you do?
+
+**Bad example (no scenario):**
+> Which encryption option uses customer-managed keys for Azure Storage?
+
+## Plausible distractor guidance
+
+Distractors must reference real Azure services, flags, or features that are genuinely related to the topic but incorrect for the specific scenario.
+
+**Good distractors** (real but wrong):
+
+- A: "Enable infrastructure encryption on the storage account." (Real feature, but does not satisfy the customer-managed key requirement alone.)
+- B: "Configure encryption with Microsoft-managed keys." (Real default, but contradicts the requirement.)
+
+**Bad distractors** (fake or implausible):
+
+- A: "Run `az storage enable-cmk --auto`." (Fake flag -- no such command exists.)
+- B: "Use Azure Key Safe to store the encryption key." (Fake service -- Azure Key Safe does not exist.)
+
+## Delivery rules (non-negotiable)
 
 When presenting a question to the user:
 
 **Phase 1 -- Question only:**
+
 - Show metadata, scenario stem, and choices (A-D).
 - Do **NOT** include correct_answer, rationale, or references.
 - End the message and wait for the user to reply.
 
 **Phase 2 -- Evaluation:**
+
 - After the user replies with their answer, show:
   - Whether they were correct or incorrect.
   - The correct answer letter.
@@ -77,24 +118,24 @@ When presenting a question to the user:
 
 If multiple questions were requested, repeat this Phase 1 / Phase 2 cycle for each question sequentially.
 
-### Output format
+## Output format
 
 **Phase 1 message (question only):**
 
 - **metadata**
   - exam: AZ-104
-  - skill_area: "<one of the AZ-104 skill areas>"
-  - objective: "<specific objective line>"
-  - bloom: "<Remember|Understand|Apply|Analyze>"
-  - difficulty: "<easy|medium|hard>"
+  - skill_area: "`<one of the AZ-104 skill areas>`"
+  - objective: "`<specific objective line>`"
+  - bloom: "`<Remember|Understand|Apply|Analyze>`"
+  - difficulty: "`<easy|medium|hard>`"
 - **question**
   - stem:
-    - <Scenario + question. Keep it tight. One problem. One decision.>
+    - `<Scenario + question. Keep it tight. One problem. One decision.>`
   - choices:
-    - A: "<choice>"
-    - B: "<choice>"
-    - C: "<choice>"
-    - D: "<choice>"
+    - A: "`<choice>`"
+    - B: "`<choice>`"
+    - C: "`<choice>`"
+    - D: "`<choice>`"
 
 *(Stop here. Wait for the user to answer.)*
 

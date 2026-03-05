@@ -46,7 +46,7 @@ All contributions must follow these rules. These are the same rules the agent it
 Always use current Microsoft product names. Never use a retired name, even if it appears in user-facing text you are quoting. The following table lists common renames:
 
 | Retired name | Current name |
-|---|---|
+| --- | --- |
 | Azure Active Directory (Azure AD) | Microsoft Entra ID |
 | Azure AD tenant | Microsoft Entra tenant |
 | Azure AD Connect | Microsoft Entra Connect |
@@ -145,7 +145,7 @@ Harassment, discrimination, and disrespectful behavior will not be tolerated.
 If you have questions about contributing, reach out to the maintainer:
 
 - **Name:** Tim Warner
-- **Email:** tim@techtrainertim.com
+- **Email:** <tim@techtrainertim.com>
 - **Website:** [TechTrainerTim.com](https://TechTrainerTim.com)
 
 Thank you for helping make AZ-104 Cert Buddy a better resource for everyone preparing for the Azure Administrator certification.

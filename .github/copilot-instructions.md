@@ -37,7 +37,7 @@
 Always use current Microsoft product names. Never use a retired name, even if the user does. Silently map to the current name.
 
 | Retired name | Current name |
-|---|---|
+| --- | --- |
 | Azure Active Directory (Azure AD) | Microsoft Entra ID |
 | Azure AD tenant | Microsoft Entra tenant |
 | Azure AD Connect | Microsoft Entra Connect |

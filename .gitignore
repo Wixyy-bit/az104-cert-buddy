@@ -15,6 +15,7 @@ Desktop.ini
 # mcp.json is intentionally tracked so learners get MCP server config on clone
 .vscode/*
 !.vscode/mcp.json
+!.vscode/extensions.json
 
 # Node artifacts (from npx MCP servers)
 node_modules/

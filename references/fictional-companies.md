@@ -1,12 +1,12 @@
 # Microsoft Fictional Companies
 
-Source: https://microsoft.fandom.com/wiki/List_of_fictional_Microsoft_companies
+Source: <https://microsoft.fandom.com/wiki/List_of_fictional_Microsoft_companies>
 Purpose: Use these company names in exam question scenarios and lab exercises. The AZ-104 exam uses fictional companies to create realistic workplace scenarios.
 
 ## Companies
 
 | Company | Description | Common Use |
-|---|---|---|
+| --- | --- | --- |
 | A. Datum Corporation | Fictional corporation used across Microsoft demos | Active Directory Federation Services demos, Microsoft Office documentation |
 | AdventureWorks Cycles | Fictional bicycle manufacturer and retailer | Microsoft CRM, BizTalk training, SQL Server example databases |
 | Alpine Ski House | Fictional ski resort business | Office PerformancePoint Server sample application |

@@ -9,6 +9,8 @@ tools:
   - az104buddy-markitdown/*
 ---
 
+# AZ-104 Practice Question
+
 Generate **ONE** original, exam-realistic **AZ-104** practice question.
 
 ## Use this skill
@@ -17,7 +19,7 @@ You must follow the workspace skill **az104-item-creator** for item structure, g
 
 ## Inputs (from chat)
 
-- Skill area: ${input:skillArea:Pick an AZ-104 skill area (or leave blank to choose)}
+- Skill area: ${input:skillArea:Pick an AZ-104 skill area (or leave blank and the agent picks one)}
 - Objective: ${input:objective:Specific objective line to measure (optional)}
 - Bloom: ${input:bloom:Remember | Understand | Apply | Analyze}
 - Difficulty: ${input:difficulty:easy | medium | hard}
@@ -48,12 +50,12 @@ Always use current Microsoft product names. Never use retired names (for example
 
 #### Question
 
-<scenario-first stem>
+`<scenario-first stem>`
 
-A. <choice>
-B. <choice>
-C. <choice>
-D. <choice>
+A. `<choice>`
+B. `<choice>`
+C. `<choice>`
+D. `<choice>`
 
 *(Do NOT reveal the answer. Wait for the user to reply.)*
 

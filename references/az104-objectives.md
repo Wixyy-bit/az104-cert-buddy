@@ -1,6 +1,6 @@
 # AZ-104: Microsoft Azure Administrator -- Skills Measured
 
-Source: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104
+Source: <https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104>
 Retrieved: 2026-03-02
 
 > **Note:** Skills measured as of April 18, 2025. The bullets that follow each of the skills measured are intended to illustrate how Microsoft is assessing that skill. Related topics may be covered in the exam. Most questions cover features that are general availability (GA). The exam may contain questions on Preview features if those features are commonly used.
